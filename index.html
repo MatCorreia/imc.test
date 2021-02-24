@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>Cálculo de IMC!</title>
+</head>
+
+<body style="background-color: rgb(145, 175, 231);">
+    <section class="container1 py-4">
+        <h1>Tabela de IMC</h1>
+        <p>IMC - Índice de Massa Corporal</p>
+        <div class="row py-4">
+            <div class="col-6">
+                <h3>IMC</h3>
+                <p>Menos do que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais do que 40</p>
+            </div>
+            <div class="col-6">
+                <h3>Resultado</h3>
+                <p>Abaixo do peso</p>
+                <p>Peso normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade grau I</p>
+                <p>Obesidade grau II</p>
+                <p>Obesidade grau III</p>
+            </div>
+        </div>
+
+        <form action="/" id="form" method="POST">
+                     
+            <h1>Calcule seu IMC</h1>
+            <div class="form-group">    
+                <label for="peso">Peso(kg):</label>
+                <input type="text" class="form-control" id="peso">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura(cm):</label>
+                <input type="text" class="form-control" id="altura">
+            </div>
+                <button type="submit" class="btn btn-primary my-2 w-100">Enviar</button>
+            
+        </form>
+
+        <div id="res"></div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
